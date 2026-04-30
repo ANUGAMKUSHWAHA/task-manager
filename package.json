@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate",
-    "deploy": "prisma migrate deploy && next build"
+    "postinstall": "npx prisma generate",
+    "deploy": "npx prisma generate && npx prisma migrate deploy && next build"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
